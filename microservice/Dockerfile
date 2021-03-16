@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:8-jre-alpine3.8
 ADD target/springboot-microservice.jar springboot-microservice.jar
 EXPOSE 8090
 ENTRYPOINT ["java", "-jar", "springboot-microservice.jar"]
